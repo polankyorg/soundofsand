@@ -1,0 +1,310 @@
+:root {
+    --primary-color: #2180a0;
+    --primary-hover: #1a6480;
+    --secondary-color: #ff6b35;
+    --dark-bg: #1a1a1a;
+    --light-bg: #f8f9fa;
+    /* Slightly lighter than f5f5f5, matches Bootstrap light */
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    /* Offset for sticky navbar */
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Navbar Customization */
+.navbar-custom {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Section Styling */
+.section-title {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Card Styling Override */
+.card {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    box-shadow: none;
+    /* Clean start */
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: white;
+    padding: 2rem;
+    height: 100%;
+    /* Ensure equal height in grids */
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
+
+.card h3,
+.card h4 {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.card-meta {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.card p {
+    color: #495057;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    /* Pushes button to bottom */
+}
+
+/* Make existing buttons inside cards look cleaner */
+.card .btn {
+    align-self: flex-start;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    /* Pill buttons */
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: none;
+    font-weight: 600;
+}
+
+.card .btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: none;
+    /* Handled by card hover mainly, or subtle */
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: white;
+    margin-top: auto;
+    /* Sticky footer behavior helpers if needed */
+}
+
+/* Back to top */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    /* Controlled by JS */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+/* Legacy/Custom Component Support */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+    color: white;
+    /* Changed to white for better contrast on dark bg */
+    border-left: 4px solid var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.highlight-box h2,
+.highlight-box h3,
+.highlight-box p {
+    color: white;
+}
+
+/* Adapting highlight-box to be light if needed, but dark is nice for "Hero" vibes. 
+   Actually original was light. Let's make a .highlight-box-light if needed, 
+   but for now let's stick to the original look which was light blue. */
+.highlight-box.light {
+    background: #f8f9fa;
+    /* Light bg */
+    color: var(--text-primary);
+    border-left-color: var(--primary-color);
+}
+
+
+/* Badges */
+.badge {
+    align-self: flex-start;
+    /* Prevents stretching in flex column */
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 50rem;
+    /* Pill shape */
+    margin-bottom: 1rem;
+    /* Space below badge */
+    letter-spacing: 0.05em;
+}
+
+.badge-tutorial {
+    background-color: #ffe0d5;
+    color: #d94f18;
+}
+
+/* Secondary light */
+.badge-theory {
+    background-color: #e3f2fd;
+    color: #0d6efd;
+}
+
+/* Primary light */
+.badge-czech {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.badge-english {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.badge-video {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+/* Bootstrap compatible tone */
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-item {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-phase {
+    font-size: 0.9rem;
+    color: white;
+    background: var(--secondary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Link Cards */
+.link-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.link-card {
+    display: block;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    /* Bootstrap border color */
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.link-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Learning Path */
+.learning-path {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.path-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 4px solid var(--secondary-color);
+}
+
+.path-card-number {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}

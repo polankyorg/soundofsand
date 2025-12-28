@@ -4,471 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Behringer Poly D Learning Hub - Manuály, Tutoriály & Teorie Syntézy</title>
-    <style>
-        :root {
-            --color-primary: #2180a0;
-            --color-primary-hover: #1a6480;
-            --color-primary-light: #e3f2fd;
-            --color-secondary: #ff6b35;
-            --color-secondary-light: #ffe0d5;
-            --color-bg-dark: #1a1a1a;
-            --color-bg-light: #f5f5f5;
-            --color-text-primary: #1a1a1a;
-            --color-text-secondary: #666;
-            --color-border: #ddd;
-            --color-success: #4caf50;
-            --color-warning: #ff9800;
-            --color-info: #2196f3;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: var(--color-text-primary);
-            background-color: var(--color-bg-light);
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
-            color: white;
-            padding: 2rem 0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.95;
-        }
-
-        nav {
-            display: flex;
-            gap: 2rem;
-            margin-top: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .nav-active {
-            background-color: rgba(255, 255, 255, 0.3);
-            border-bottom: 3px solid var(--color-secondary);
-        }
-
-        main {
-            padding: 2rem 0;
-        }
-
-        .section {
-            margin-bottom: 3rem;
-            display: none;
-        }
-
-        .section.active {
-            display: block;
-            animation: fadeIn 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: var(--color-primary);
-            margin-bottom: 2rem;
-            border-bottom: 3px solid var(--color-secondary);
-            padding-bottom: 0.5rem;
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .card {
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid var(--color-primary);
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-        }
-
-        .card h3 {
-            color: var(--color-primary);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .card-meta {
-            font-size: 0.85rem;
-            color: var(--color-text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .card p {
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .badge-tutorial {
-            background-color: var(--color-secondary-light);
-            color: var(--color-secondary);
-        }
-
-        .badge-theory {
-            background-color: var(--color-primary-light);
-            color: var(--color-primary);
-        }
-
-        .badge-czech {
-            background-color: #fce4ec;
-            color: #c2185b;
-        }
-
-        .badge-english {
-            background-color: #e8f5e9;
-            color: #2e7d32;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.7rem 1.5rem;
-            background-color: var(--color-primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-        }
-
-        .btn:hover {
-            background-color: var(--color-primary-hover);
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background-color: var(--color-secondary);
-        }
-
-        .btn-secondary:hover {
-            background-color: #e55100;
-        }
-
-        .timeline {
-            position: relative;
-            padding: 2rem 0;
-        }
-
-        .timeline-item {
-            background: white;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--color-primary);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .timeline-phase {
-            font-size: 0.9rem;
-            color: white;
-            background: var(--color-secondary);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .timeline-item h3 {
-            color: var(--color-primary);
-            margin: 0.5rem 0 1rem 0;
-            font-size: 1.2rem;
-        }
-
-        .timeline-item ul {
-            margin-left: 1.5rem;
-            color: var(--color-text-secondary);
-        }
-
-        .timeline-item li {
-            margin-bottom: 0.5rem;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        th {
-            background-color: var(--color-primary);
-            color: white;
-            padding: 1rem;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        td {
-            padding: 1rem;
-            border-bottom: 1px solid var(--color-border);
-        }
-
-        tr:hover {
-            background-color: var(--color-bg-light);
-        }
-
-        .link-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .link-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 2px solid var(--color-border);
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .link-card:hover {
-            border-color: var(--color-primary);
-            box-shadow: 0 4px 16px rgba(33, 128, 160, 0.15);
-        }
-
-        .link-card h4 {
-            color: var(--color-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .link-card p {
-            font-size: 0.9rem;
-            color: var(--color-text-secondary);
-            margin: 0;
-        }
-
-        .highlight-box {
-            background: linear-gradient(135deg, var(--color-primary-light) 0%, #f0f9ff 100%);
-            border-left: 4px solid var(--color-primary);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-        }
-
-        .highlight-box h3 {
-            color: var(--color-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .footer {
-            background-color: var(--color-bg-dark);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            margin-top: 3rem;
-        }
-
-        .footer p {
-            opacity: 0.8;
-            margin: 0;
-        }
-
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 50px;
-            height: 50px;
-            background-color: var(--color-primary);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .back-to-top:hover {
-            background-color: var(--color-primary-hover);
-            transform: translateY(-4px);
-        }
-
-        .back-to-top.show {
-            display: flex;
-        }
-
-        .learning-path {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .path-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            border-top: 4px solid var(--color-secondary);
-        }
-
-        .path-card-number {
-            font-size: 2.5rem;
-            color: var(--color-secondary);
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .path-card h3 {
-            color: var(--color-primary);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .path-card ul {
-            text-align: left;
-            margin-left: 1.5rem;
-            color: var(--color-text-secondary);
-        }
-
-        .path-card li {
-            margin-bottom: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            nav {
-                gap: 1rem;
-            }
-
-            nav a {
-                padding: 0.4rem 0.8rem;
-                font-size: 0.9rem;
-            }
-
-            .card-grid {
-                grid-template-columns: 1fr;
-            }
-
-            table {
-                font-size: 0.9rem;
-            }
-
-            td,
-            th {
-                padding: 0.7rem;
-            }
-
-            .back-to-top {
-                width: 45px;
-                height: 45px;
-                bottom: 1.5rem;
-                right: 1.5rem;
-            }
-        }
-    </style>
+    <title>Sound of Sand</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
         <div class="container">
-            <h1>🎛️ Behringer Poly D Learning Hub</h1>
-            <p>Kompletní průvodce mastering vaší syntézy – manuály, tutoriály & teorie</p>
-            <nav>
-                <a href="#" class="nav-link nav-active" data-section="home">Domů</a>
-                <a href="#" class="nav-link" data-section="documentation">Dokumentace</a>
-                <a href="#" class="nav-link" data-section="tutorials">Tutoriály</a>
-                <a href="#" class="nav-link" data-section="theory">Teorie Syntézy</a>
-                <a href="#" class="nav-link" data-section="resources">Zdroje & Patche</a>
-                <a href="#" class="nav-link" data-section="roadmap">Plán Učení</a>
-            </nav>
+            <a class="navbar-brand" href="#">Sound of Sand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Jak začít</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documentation">Dokumentace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tutorials">Tutoriály</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#theory">Teorie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Zdroje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roadmap">Plán</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
+    <main class="container py-4">
+        <!-- O MNĚ SECTION -->
+        <section id="omne" class="mb-5">
+            <h2 class="section-title">O mně</h2>
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <p class="lead">Vítejte na stránkách Sound of Sand.</p>
+                    <p>Jsem nadšenec do syntezátorů a zvukového designu. Tento web slouží jako rozcestník pro učení a
+                        objevování nových zvukových možností.</p>
+                </div>
+                <div class="col-md-5">
+                    <div
+                        class="ratio ratio-4x3 bg-secondary bg-opacity-10 rounded d-flex align-items-center justify-content-center">
+                        <span class="text-muted">Placeholder pro obrázek</span>
+                        <!-- <img src="path/to/image.jpg" class="img-fluid rounded" alt="O mně"> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- HOME SECTION -->
-        <section id="home" class="section active">
+        <section id="home" class="mb-5">
             <div class="highlight-box">
-                <h2>👋 Vítejte v Behringer Poly D Learning Hub</h2>
+                <h2>Vítejte v Behringer Poly D Learning Hub</h2>
                 <p>Tato stránka je váš osobní rozcestník k mastering Behringer Poly D. Zjistěte, kde najít nejlepší
                     manuály, praktické tutoriály a teorii zvukové syntézy, kterou instrument používá.</p>
             </div>
@@ -500,9 +98,8 @@
                 </div>
             </div>
 
-            <div class="highlight-box"
-                style="background: linear-gradient(135deg, #ffe0d5 0%, #fff8f0 100%); border-left-color: var(--color-secondary);">
-                <h3 style="color: var(--color-secondary);">📋 Kolik času Investovat?</h3>
+            <div class="highlight-box">
+                <h3>Kolik času Investovat?</h3>
                 <p><strong>Týdny 1-2:</strong> Základy + první práce se zvukem (4-6 hodin)<br>
                     <strong>Týdny 3-4:</strong> Hlubší porozumění syntéze (5-8 hodin)<br>
                     <strong>Týden 5+:</strong> Sound design a vlastní patchování (průběžně)
@@ -512,7 +109,7 @@
 
         <!-- DOCUMENTATION SECTION -->
         <section id="documentation" class="section">
-            <h2 class="section-title">📚 Oficiální Dokumentace</h2>
+            <h2 class="section-title">Oficiální Dokumentace</h2>
             <p>Oficiální manuály a quick start guides pro Behringer Poly D:</p>
 
             <div class="card-grid">
@@ -547,10 +144,10 @@
 
         <!-- TUTORIALS SECTION -->
         <section id="tutorials" class="section">
-            <h2 class="section-title">🎥 YouTube Tutoriály – Praktické Návody</h2>
+            <h2 class="section-title">YouTube Tutoriály – Praktické Návody</h2>
 
             <div class="highlight-box">
-                <h3>💡 Doporučený Postup</h3>
+                <h3>Doporučený Postup</h3>
                 <p><strong>Krok 1:</strong> XNB Deep Dive Guide (kompletní pokrytí)<br>
                     <strong>Krok 2:</strong> Loopopmusic Review (alternativní přístup)<br>
                     <strong>Krok 3:</strong> Torvik Sound Design (praktické příklady)
@@ -633,7 +230,7 @@
 
         <!-- THEORY SECTION -->
         <section id="theory" class="section">
-            <h2 class="section-title">📖 Teorie Zvukové Syntézy</h2>
+            <h2 class="section-title">Teorie Zvukové Syntézy</h2>
 
             <div class="highlight-box">
                 <h3>Výběr Dle Úrovně Detailu</h3>
@@ -643,7 +240,7 @@
                 </p>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">🇨🇿 Česky</h3>
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Česky</h3>
             <div class="card-grid">
                 <div class="card">
                     <div class="badge badge-czech">ČESKY</div>
@@ -665,7 +262,7 @@
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">🇬🇧 Anglicky – Základní
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Anglicky – Základní
                 Koncepty</h3>
             <div class="card-grid">
                 <div class="card">
@@ -696,7 +293,7 @@
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">🎛️ Oscilátory & Vlnové
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Oscilátory & Vlnové
                 Tvary</h3>
             <div class="card-grid">
                 <div class="card">
@@ -718,7 +315,7 @@
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">🔊 Moog Ladder Filter (To Je
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Moog Ladder Filter (To Je
                 Ve Vašem Poly D!)</h3>
             <div class="card-grid">
                 <div class="card">
@@ -749,7 +346,7 @@
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">⏱️ ADSR Envelope Generátory
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">ADSR Envelope Generátory
             </h3>
             <div class="card-grid">
                 <div class="card">
@@ -780,7 +377,7 @@
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">📡 LFO & Modulace</h3>
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">LFO & Modulace</h3>
             <div class="card-grid">
                 <div class="card">
                     <div class="badge badge-theory">TEORIE</div>
@@ -792,7 +389,7 @@
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">🎬 Video Tutoriály se Zvukem
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Video Tutoriály se Zvukem
             </h3>
             <div class="card-grid">
                 <div class="card">
@@ -818,7 +415,7 @@
 
         <!-- RESOURCES SECTION -->
         <section id="resources" class="section">
-            <h2 class="section-title">🎁 Zdroje, Patche & Sekvence</h2>
+            <h2 class="section-title">Zdroje, Patche & Sekvence</h2>
 
             <div class="highlight-box">
                 <h3>Volně Stažitelné Patche</h3>
@@ -826,7 +423,7 @@
                     Poly D.</p>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">📥 Stažitelné Sekvence &
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Stažitelné Sekvence &
                 Patche</h3>
             <div class="card-grid">
                 <div class="card">
@@ -866,7 +463,7 @@
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">📊 Recenze & Documentace
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Recenze & Documentace
             </h3>
             <div class="card-grid">
                 <div class="card">
@@ -905,7 +502,7 @@
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">🌍 Komunita & Diskuze</h3>
+            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Komunita & Diskuze</h3>
             <div class="card-grid">
                 <div class="card">
                     <h3>Reddit r/synthesizers</h3>
@@ -926,7 +523,7 @@
 
         <!-- ROADMAP SECTION -->
         <section id="roadmap" class="section">
-            <h2 class="section-title">🗺️ Plán Strukturovaného Učení</h2>
+            <h2 class="section-title">Plán Strukturovaného Učení</h2>
 
             <p style="font-size: 1.1rem; margin-bottom: 2rem;">Toto je doporučený 5+ týdenní plán, jak systematicky
                 ovládnout Behringer Poly D. Můžete jej přizpůsobit svému tempu.</p>
@@ -934,7 +531,7 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <span class="timeline-phase">Týdny 1-2: Základy</span>
-                    <h3>🎯 Cíl: Seznámit se s nástrojem a tvorba prvních zvuků</h3>
+                    <h3>Cíl: Seznámit se s nástrojem a tvorba prvních zvuků</h3>
                     <ul>
                         <li><strong>Pusťte si:</strong> XNB Deep Dive Guide (YouTube) – sledujte především sekce o
                             oscilátorech a filtrech</li>
@@ -947,7 +544,7 @@
 
                 <div class="timeline-item">
                     <span class="timeline-phase">Týdny 3-4: Hlubší Porozumění</span>
-                    <h3>🔍 Cíl: Pochopit teorii a principy syntézy</h3>
+                    <h3>Cíl: Pochopit teorii a principy syntézy</h3>
                     <ul>
                         <li><strong>Čtěte:</strong> Control Voltage série – oscilátory, envelope, LFO
                             (ControlVoltage.net)</li>
@@ -959,7 +556,7 @@
 
                 <div class="timeline-item">
                     <span class="timeline-phase">Týden 5+: Sound Design & Vlastní Patchování</span>
-                    <h3>✨ Cíl: Tvořit vlastní zvuky a patche</h3>
+                    <h3>Cíl: Tvořit vlastní zvuky a patche</h3>
                     <ul>
                         <li><strong>Stáhněte si:</strong> 20 Free Sekvencí z LFO.Store – studujte jak fungují</li>
                         <li><strong>Experimentujte:</strong> S vlastními patchy – pokuste se replikovat zvuky z komunity
@@ -972,7 +569,7 @@
             </div>
 
             <div class="highlight-box" style="margin-top: 2rem;">
-                <h3>💡 Tipy pro Efektivní Učení</h3>
+                <h3>Tipy pro Efektivní Učení</h3>
                 <ul style="margin-left: 1.5rem;">
                     <li><strong>Střídejte teoretické a praktické učení.</strong> Nečtěte jen články – rovnou
                         experimentujte na přístroji.</li>
@@ -988,7 +585,7 @@
 
             <div
                 style="background: white; padding: 2rem; border-radius: 8px; margin-top: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-                <h3 style="color: var(--color-primary); margin-bottom: 1rem;">📝 Pracovní List – Sledujte Svůj Pokrok
+                <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Pracovní List – Sledujte Svůj Pokrok
                 </h3>
                 <p style="margin-bottom: 1rem;"><em>Vytiskněte si tento seznam a odškrtávejte položky jak
                         postupujete:</em></p>
@@ -1027,55 +624,28 @@
 
     <button class="back-to-top" id="backToTop">↑</button>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script>
-        // Navigation
-        const navLinks = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('.section');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-
-                // Remove active from all
-                navLinks.forEach(l => l.classList.remove('nav-active'));
-                sections.forEach(s => s.classList.remove('active'));
-
-                // Add active to clicked
-                link.classList.add('nav-active');
-                const sectionId = link.getAttribute('data-section');
-                document.getElementById(sectionId).classList.add('active');
-
-                // Scroll to top
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        });
-
         // Back to top button
         const backToTopBtn = document.getElementById('backToTop');
 
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
-                backToTopBtn.classList.add('show');
+                backToTopBtn.style.display = 'flex';
             } else {
-                backToTopBtn.classList.remove('show');
+                backToTopBtn.style.display = 'none';
             }
         });
 
         backToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
-        // Helper function for onclick attribute
-        function setSection(sectionId) {
-            navLinks.forEach(l => l.classList.remove('nav-active'));
-            sections.forEach(s => s.classList.remove('active'));
-
-            document.getElementById(sectionId).classList.add('active');
-            document.querySelector(`[data-section="${sectionId}"]`).classList.add('nav-active');
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
