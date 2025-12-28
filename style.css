@@ -33,12 +33,23 @@ body {
 }
 
 /* Section Styling */
+/* Section Styling */
 .section-title {
     color: var(--primary-color);
     border-bottom: 3px solid var(--secondary-color);
     display: inline-block;
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    color: var(--text-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 5px;
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
 }
 
 /* Card Styling Override */
@@ -141,12 +152,7 @@ footer {
 
 /* Legacy/Custom Component Support */
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
+
 
 .highlight-box {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
@@ -304,7 +310,57 @@ footer {
 
 .path-card-number {
     font-size: 2.5rem;
-    color: var(--secondary-color);
+    justify-content: center;
+    background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.feature-icon svg {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+}
+
+.feature h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    color: var(--text-secondary);
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.icon-link:hover {
+    text-decoration: underline;
+}
+
+.icon-link svg {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.5rem;
+    transition: transform 0.2s;
+}
+
+.icon-link:hover svg {
+    transform: translateX(4px);
+}
+
+@media (min-width: 992px) {
+    .row-cols-lg-2>.col:not(:nth-child(2n)) {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .row-cols-lg-3>.col:not(:nth-child(3n)) {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
 }

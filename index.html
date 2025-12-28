@@ -21,6 +21,9 @@
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Domů</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#home">Jak začít</a>
                     </li>
                     <li class="nav-item">
@@ -38,6 +41,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#roadmap">Plán</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerie.html">Galerie</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -45,28 +51,12 @@
 
     <main class="container py-4">
         <!-- O MNĚ SECTION -->
-        <section id="omne" class="mb-5">
-            <h2 class="section-title">O mně</h2>
-            <div class="row align-items-center">
-                <div class="col-md-7">
-                    <p class="lead">Vítejte na stránkách Sound of Sand.</p>
-                    <p>Jsem nadšenec do syntezátorů a zvukového designu. Tento web slouží jako rozcestník pro učení a
-                        objevování nových zvukových možností.</p>
-                </div>
-                <div class="col-md-5">
-                    <div
-                        class="ratio ratio-4x3 bg-secondary bg-opacity-10 rounded d-flex align-items-center justify-content-center">
-                        <span class="text-muted">Placeholder pro obrázek</span>
-                        <!-- <img src="path/to/image.jpg" class="img-fluid rounded" alt="O mně"> -->
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- O MNĚ SECTION REMOVED -->
 
         <!-- HOME SECTION -->
         <section id="home" class="mb-5">
             <div class="highlight-box">
-                <h2>Vítejte v Behringer Poly D Learning Hub</h2>
+                <h2>👋 Vítejte v Behringer Poly D Learning Hub</h2>
                 <p>Tato stránka je váš osobní rozcestník k mastering Behringer Poly D. Zjistěte, kde najít nejlepší
                     manuály, praktické tutoriály a teorii zvukové syntézy, kterou instrument používá.</p>
             </div>
@@ -109,128 +99,224 @@
 
         <!-- DOCUMENTATION SECTION -->
         <section id="documentation" class="section">
-            <h2 class="section-title">Oficiální Dokumentace</h2>
+            <h2 class="section-title">📚 Oficiální Dokumentace</h2>
             <p>Oficiální manuály a quick start guides pro Behringer Poly D:</p>
 
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-czech">ČESKY</div>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
                     <h3>Behringer Poly D Manuál</h3>
-                    <p class="card-meta">43 stran, oficiální dokumentace</p>
-                    <p>Kompletní uživatelský manuál s detaily všech funkcí, ovládacích prvků a nastavení.</p>
-                    <a href="https://www.manualypdf.cz/behringer/poly-d/manu%C3%A1l" class="btn"
-                        target="_blank">Stáhnout (CZ)</a>
+                    <p><strong>43 stran, oficiální dokumentace.</strong> Kompletní uživatelský manuál s detaily všech
+                        funkcí, ovládacích prvků a nastavení.</p>
+                    <a href="https://www.manualypdf.cz/behringer/poly-d/manu%C3%A1l" class="icon-link" target="_blank">
+                        Stáhnout (CZ)
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-english">ENGLISH</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
                     <h3>Quick Start Guide</h3>
-                    <p class="card-meta">Oficiální Behringer, PDF</p>
-                    <p>Krátký úvodní návod od výrobce – ideální pro rychlý start a základní seznámení.</p>
+                    <p><strong>Oficiální Behringer, PDF.</strong> Krátký úvodní návod od výrobce – ideální pro rychlý
+                        start a základní seznámení.</p>
                     <a href="https://cdn.mediavalet.com/aunsw/musictribe/q0YlpjMFtkukVo_3MpklkQ/_FyBHVnTWU2inTDnCBqscQ/Original/QSG_BE_0722-AAJ_POLY%20D_WW.pdf"
-                        class="btn" target="_blank">Stáhnout (EN)</a>
+                        class="icon-link" target="_blank">
+                        Stáhnout (EN)
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-english">ENGLISH</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
                     <h3>User Manual</h3>
-                    <p class="card-meta">43 stran, kompletní dokumentace</p>
-                    <p>Stejný obsah jako česká verze – detailní reference pro všechny funkce.</p>
-                    <a href="https://www.manualpdf.in/behringer/poly-d/manual" class="btn" target="_blank">Stáhnout
-                        (EN)</a>
+                    <p><strong>43 stran, kompletní dokumentace.</strong> Stejný obsah jako česká verze – detailní
+                        reference pro všechny funkce.</p>
+                    <a href="https://www.manualpdf.in/behringer/poly-d/manual" class="icon-link" target="_blank">
+                        Stáhnout (EN)
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- TUTORIALS SECTION -->
         <section id="tutorials" class="section">
-            <h2 class="section-title">YouTube Tutoriály – Praktické Návody</h2>
+            <h2 class="section-title">🎥 YouTube Tutoriály – Praktické Návody</h2>
 
             <div class="highlight-box">
-                <h3>Doporučený Postup</h3>
+                <h3>💡 Doporučený Postup</h3>
                 <p><strong>Krok 1:</strong> XNB Deep Dive Guide (kompletní pokrytí)<br>
                     <strong>Krok 2:</strong> Loopopmusic Review (alternativní přístup)<br>
                     <strong>Krok 3:</strong> Torvik Sound Design (praktické příklady)
                 </p>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Kompletní Průvodci</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-tutorial">YOUTUBE</div>
+            <h3 class="section-subtitle">Kompletní Průvodci</h3>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
                     <h3>XNB - Complete Deep Dive</h3>
-                    <p class="card-meta">2 hodiny+, se časovými kódy</p>
-                    <p><strong>Obsah:</strong> Oscilátory, filtry, ADSR envelope, LFO, sequencer, arpeggiátor, efekty –
-                        kompletní pokrytí všech funkcí.</p>
-                    <a href="https://www.youtube.com/watch?v=uCarQdTBIjY" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+                    <p>2 hodiny+, se časovými kódy. <strong>Obsah:</strong> Oscilátory, filtry, ADSR envelope, LFO,
+                        sequencer, arpeggiátor, efekty – kompletní pokrytí všech funkcí.</p>
+                    <a href="https://www.youtube.com/watch?v=uCarQdTBIjY" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-tutorial">YOUTUBE</div>
-                    <h3>Loopopmusic (Mark V) - Review & Tutorial</h3>
-                    <p class="card-meta">31 minut, výborný úvod</p>
-                    <p><strong>Obsah:</strong> Režimy (Uni/Poly), Auto-damp, Sound Design tips, arpeggiátor a sequencer.
-                    </p>
-                    <a href="https://www.youtube.com/watch?v=gNDwUoGqxDE" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
+                    <h3>Loopopmusic - Review & Tutorial</h3>
+                    <p>31 minut, výborný úvod. <strong>Obsah:</strong> Režimy (Uni/Poly), Auto-damp, Sound Design tips,
+                        arpeggiátor a sequencer.</p>
+                    <a href="https://www.youtube.com/watch?v=gNDwUoGqxDE" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
             <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Sound Design – Praktické
                 Příklady</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-tutorial">YOUTUBE</div>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
                     <h3>Torvik - 80s Synthwave Bass</h3>
-                    <p class="card-meta">From Scratch tutorial</p>
-                    <p><strong>Zaměření:</strong> Basový design – oscilátory, filtry, envelope shaping, sequencování.
-                    </p>
-                    <a href="https://www.youtube.com/watch?v=DJHbUAH9GBg" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+                    <p>From Scratch tutorial. <strong>Zaměření:</strong> Basový design – oscilátory, filtry, envelope
+                        shaping, sequencování.</p>
+                    <a href="https://www.youtube.com/watch?v=DJHbUAH9GBg" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-tutorial">YOUTUBE</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
                     <h3>Dillio T - Sequencer Tutorial</h3>
-                    <p class="card-meta">Praktický návod</p>
-                    <p><strong>Zaměření:</strong> Tvorba sekvencí, glide efekty, sekvencování.</p>
-                    <a href="https://www.youtube.com/watch?v=OHUHvByyHc4" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+                    <p>Praktický návod. <strong>Zaměření:</strong> Tvorba sekvencí, glide efekty, sekvencování.</p>
+                    <a href="https://www.youtube.com/watch?v=OHUHvByyHc4" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-tutorial">YOUTUBE</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
                     <h3>Dillio T - Funky Bass Tutorial</h3>
-                    <p class="card-meta">Sound design fokus</p>
-                    <p><strong>Zaměření:</strong> Funkční basové zvuky a jejich tvorba.</p>
-                    <a href="https://www.youtube.com/watch?v=7IBrEuQXjKo" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+                    <p>Sound design fokus. <strong>Zaměření:</strong> Funkční basové zvuky a jejich tvorba.</p>
+                    <a href="https://www.youtube.com/watch?v=7IBrEuQXjKo" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-tutorial">YOUTUBE</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
                     <h3>XNB - Making Sounds Tutorial</h3>
-                    <p class="card-meta">Episode 4 - Step by Step</p>
-                    <p><strong>Obsah:</strong> Dva konkrétní patche vytvořené krok za krokem s patch sheets.</p>
-                    <a href="https://www.youtube.com/watch?v=uInLVFBxPwM" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+                    <p>Episode 4 - Step by Step. <strong>Obsah:</strong> Dva konkrétní patche vytvořené krok za krokem s
+                        patch sheets.</p>
+                    <a href="https://www.youtube.com/watch?v=uInLVFBxPwM" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-tutorial">YOUTUBE</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
                     <h3>This Synth is Awesome</h3>
-                    <p class="card-meta">Behringer Poly D Demo</p>
-                    <p><strong>Obsah:</strong> Praktické hudební demonstrace, tvorba akordů, mod wheel.</p>
-                    <a href="https://www.youtube.com/watch?v=rZPEoGecqyY" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+                    <p>Behringer Poly D Demo. <strong>Obsah:</strong> Praktické hudební demonstrace, tvorba akordů, mod
+                        wheel.</p>
+                    <a href="https://www.youtube.com/watch?v=rZPEoGecqyY" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- THEORY SECTION -->
         <section id="theory" class="section">
-            <h2 class="section-title">Teorie Zvukové Syntézy</h2>
+            <h2 class="section-title">📖 Teorie Zvukové Syntézy</h2>
 
             <div class="highlight-box">
                 <h3>Výběr Dle Úrovně Detailu</h3>
@@ -240,175 +326,197 @@
                 </p>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Česky</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-czech">ČESKY</div>
+            <h3 class="section-subtitle">🇨🇿 Česky</h3>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
                     <h3>Subtraktivní Syntéza</h3>
-                    <p class="card-meta">eMastered.com, článek</p>
-                    <p><strong>Témata:</strong> VCO, waveforms, filtry, ADSR, LFO, rezonance, harmonický obsah.</p>
-                    <p>Srozumitelné vysvětlení základů, ideální úvod do subtractive syntézy.</p>
-                    <a href="https://emastered.com/cs/blog/subtractive-synthesis" class="btn" target="_blank">Čtěte
-                        Článek</a>
+                    <p>eMastered.com, článek. <strong>Témata:</strong> VCO, waveforms, filtry, ADSR, LFO, rezonance,
+                        harmonický obsah. Srozumitelné vysvětlení základů.</p>
+                    <a href="https://emastered.com/cs/blog/subtractive-synthesis" class="icon-link" target="_blank">
+                        Čtěte Článek
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-czech">ČESKY</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
                     <h3>Aditivní vs. Subtraktivní</h3>
-                    <p class="card-meta">eMastered.com, článek</p>
-                    <p><strong>Obsah:</strong> Porovnání obou syntézních metod, historie a praktické rozdíly.</p>
-                    <a href="https://emastered.com/cs/blog/additive-vs-subtractive-synthesis" class="btn"
-                        target="_blank">Čtěte Článek</a>
+                    <p>eMastered.com, článek. <strong>Obsah:</strong> Porovnání obou syntézních metod, historie a
+                        praktické rozdíly.</p>
+                    <a href="https://emastered.com/cs/blog/additive-vs-subtractive-synthesis" class="icon-link"
+                        target="_blank">
+                        Čtěte Článek
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Anglicky – Základní
-                Koncepty</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-theory">TEORIE</div>
-                    <h3>Roland - Beginner's Guide</h3>
-                    <p class="card-meta">Roland.com, článek</p>
-                    <p><strong>Obsah:</strong> VCF, VCA, ADSR – přístupné vysvětlení pro začátečníky.</p>
-                    <a href="https://www.roland.com/uk/blog/guide-to-subtractive-synthesis/" class="btn"
-                        target="_blank">Čtěte Článek</a>
+            <h3 class="section-subtitle">🇬🇧 Anglicky – Základní Koncepty</h3>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
+                    <h3>Control Voltage: Oscillators</h3>
+                    <p>VCO, waveforms, harmoniky. <strong>Obsah:</strong> Základní stavební kameny zvuku, rozdíly mezi
+                        vlnovými průběhy.</p>
+                    <a href="https://www.controlvoltage.net/blogs/channels/basic-synth-1-oscillators/" class="icon-link"
+                        target="_blank">
+                        Čtěte Článek
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-theory">TEORIE</div>
-                    <h3>Noise Engineering - Subtractive Voice</h3>
-                    <p class="card-meta">NoiseEngineering.us, článek</p>
-                    <p><strong>Obsah:</strong> ADSR envelopes, VCA control, filter control.</p>
-                    <a href="http://noiseengineering.us/blogs/loquelic-literitas-the-blog/1-to-talking-the-subtractive-voice/"
-                        class="btn" target="_blank">Čtěte Článek</a>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
+                    <h3>Control Voltage: Filters</h3>
+                    <p>VCF, Cutoff, Resonance. <strong>Obsah:</strong> Jak filtry tvarují zvuk, typy filtrů (Low Pass,
+                        High Pass).</p>
+                    <a href="https://www.controlvoltage.net/blogs/channels/basic-synth-2-filters/" class="icon-link"
+                        target="_blank">
+                        Čtěte Článek
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-theory">TEORIE</div>
-                    <h3>The Conversation - Moog Design</h3>
-                    <p class="card-meta">TheConversation.com, článek</p>
-                    <p><strong>Obsah:</strong> Minimoog design principy, historické pozadí, Bob Moog.</p>
-                    <a href="https://theconversation.com/sublime-design-the-moog-synthesiser-26460" class="btn"
-                        target="_blank">Čtěte Článek</a>
-                </div>
-            </div>
-
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Oscilátory & Vlnové
-                Tvary</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-theory">TEORIE</div>
-                    <h3>Control Voltage - Oscillators</h3>
-                    <p class="card-meta">ControlVoltage.net, série</p>
-                    <p><strong>Témata:</strong> VCO, waveforms, harmoniky, frekvence, amplituda.</p>
-                    <a href="https://www.controlvoltage.net/blogs/channels/basic-synth-1-oscillators/" class="btn"
-                        target="_blank">Čtěte Článek</a>
-                </div>
-
-                <div class="card">
-                    <div class="badge badge-theory">TEORIE</div>
-                    <h3>eNews Europe - Harmonic Content</h3>
-                    <p class="card-meta">eNewsEurope.com, článek</p>
-                    <p><strong>Obsah:</strong> Harmonický obsah waveformů, PWM, vibrato vs tremolo.</p>
-                    <a href="https://www.eenewseurope.com/en/making-sounds-with-analogue-electronics-part-5-using-analogue-synthesis/"
-                        class="btn" target="_blank">Čtěte Článek</a>
-                </div>
-            </div>
-
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Moog Ladder Filter (To Je
-                Ve Vašem Poly D!)</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-theory">TECHNICKÉ</div>
-                    <h3>All About Circuits - Moog Filter</h3>
-                    <p class="card-meta">AllAboutCircuits.com, technický článek</p>
-                    <p><strong>Obsah:</strong> Technická analýza Moog Ladder filtru, resonance, phase shift.</p>
-                    <a href="https://www.allaboutcircuits.com/technical-articles/characterizing-the-moog-filter/"
-                        class="btn" target="_blank">Čtěte Článek</a>
-                </div>
-
-                <div class="card">
-                    <div class="badge badge-theory">PRAKTICKÉ</div>
-                    <h3>Sound on Sound - Brass Synthesis</h3>
-                    <p class="card-meta">SoundOnSound.com, tutorial</p>
-                    <p><strong>Obsah:</strong> Praktické příklady, filter envelope, signal flow na Minimogu.</p>
-                    <a href="https://www.soundonsound.com/techniques/brass-synthesis-minimoog" class="btn"
-                        target="_blank">Čtěte Článek</a>
-                </div>
-
-                <div class="card">
-                    <div class="badge badge-theory">PRAKTICKÉ</div>
-                    <h3>Ali Jamieson - Subtractive Synthesis Guide</h3>
-                    <p class="card-meta">AliJamieson.co.uk, kompletní guide</p>
-                    <p><strong>Obsah:</strong> Kompletní guide s příklady, Moog Ladder filter, filter envelope.</p>
-                    <a href="https://alijamieson.co.uk/2021/12/19/forgive-me-lord-for-i-have-synth-a-guide-to-subtractive-synthesis/"
-                        class="btn" target="_blank">Čtěte Článek</a>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
+                    <h3>Control Voltage: Envelope</h3>
+                    <p>ADSR (Attack, Decay, Sustain, Release). <strong>Obsah:</strong> Tvarování hlasitosti a průběhu
+                        zvuku v čase.</p>
+                    <a href="https://www.controlvoltage.net/blogs/channels/basic-synth-3-amplifier-envelope/"
+                        class="icon-link" target="_blank">
+                        Čtěte Článek
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">ADSR Envelope Generátory
-            </h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-theory">TEORIE</div>
-                    <h3>PsychoSynth - ADSR Explained</h3>
-                    <p class="card-meta">PsychoSynth.com, článek</p>
-                    <p><strong>Obsah:</strong> ADSR stages (Attack, Decay, Sustain, Release), praktické příklady.</p>
-                    <a href="https://psychosynth.com/sound-design/envelopes/adsr/" class="btn" target="_blank">Čtěte
-                        Článek</a>
-                </div>
-
-                <div class="card">
-                    <div class="badge badge-theory">TEORIE</div>
-                    <h3>Native Instruments - ADSR Control</h3>
-                    <p class="card-meta">Native-Instruments.com, blog</p>
-                    <p><strong>Obsah:</strong> Detailní stage popis, jak používat ADSR v praxi.</p>
-                    <a href="https://blog.native-instruments.com/adsr-explained/" class="btn" target="_blank">Čtěte
-                        Článek</a>
-                </div>
-
-                <div class="card">
-                    <div class="badge badge-theory">TEORIE</div>
-                    <h3>Control Voltage - LFOs & Envelopes</h3>
-                    <p class="card-meta">ControlVoltage.net, série</p>
-                    <p><strong>Obsah:</strong> Gate signály, trigger, ADSR vs LFO.</p>
+            <h3 class="section-subtitle">🇬🇧 Anglicky – Pokročilé Témata (LFO & Mod)</h3>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
+                    <h3>Control Voltage: LFO</h3>
+                    <p>Low Frequency Oscillator. <strong>Obsah:</strong> Modulace, vibrato, tremolo a jak oživit
+                        statický zvuk.</p>
                     <a href="https://www.controlvoltage.net/blogs/channels/basic-synth-4-lfos-envelopes-and-random-voltage/"
-                        class="btn" target="_blank">Čtěte Článek</a>
+                        class="icon-link" target="_blank">
+                        Čtěte Článek
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
+                    <h3>SoS: Synth Secrets</h3>
+                    <p>Legendární série Sound on Sound. <strong>Obsah:</strong> Hluboký ponor do teorie syntézy (63
+                        dílů!).</p>
+                    <a href="https://www.soundonsound.com/series/synth-secrets" class="icon-link" target="_blank">
+                        Čtěte Článek
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
+                    <h3>SoS: Filters & Synthesis</h3>
+                    <p>Praktické příklady filtrů. <strong>Obsah:</strong> Jak filtry imitují akustické nástroje.</p>
+                    <a href="https://www.soundonsound.com/techniques/filters-synthesis" class="icon-link"
+                        target="_blank">
+                        Čtěte Článek
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">LFO & Modulace</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-theory">TEORIE</div>
-                    <h3>Perfect Circuit - Learning LFOs</h3>
-                    <p class="card-meta">PerfectCircuit.com, tutorial</p>
-                    <p><strong>Obsah:</strong> LFO funkce, frequency, waveshape, vibrato, tremolo.</p>
-                    <a href="https://www.perfectcircuit.com/signal/learning-synthesis-lfos" class="btn"
-                        target="_blank">Čtěte Článek</a>
-                </div>
-            </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Video Tutoriály se Zvukem
-            </h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-tutorial">VIDEO</div>
-                    <h3>VCV Rack - Basic Subtractive</h3>
-                    <p class="card-meta">YouTube, praktická demonstrace</p>
-                    <p><strong>Obsah:</strong> Praktická démonstrace subtractive syntézy v akci s modulárním
-                        synthesizérem.</p>
-                    <a href="https://www.youtube.com/watch?v=vinFybGKXMA" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
-                </div>
 
-                <div class="card">
-                    <div class="badge badge-tutorial">VIDEO</div>
-                    <h3>YouTube - How to Use Minimoog</h3>
-                    <p class="card-meta">YouTube, 1 hodina</p>
-                    <p><strong>Obsah:</strong> Kompletní tutorial; Minimoog je základem Poly D.</p>
-                    <a href="https://www.youtube.com/watch?v=0hfdSrK46EE" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+
+
+
+
+            <h3 class="section-subtitle">🎥 Video Teorie</h3>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-1">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
+                    <h3>Introverting: Subtractive Synthesis</h3>
+                    <p>Skvělá animovaná vizualizace. <strong>Obsah:</strong> Jak funguje odečítání harmonických
+                        frekvencí, intuitivní a vizuální.</p>
+                    <a href="https://www.youtube.com/watch?v=H0d9sO9B_vU" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -423,100 +531,210 @@
                     Poly D.</p>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Stažitelné Sekvence &
-                Patche</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-success" style="background-color: #c8e6c9; color: #2e7d32;">ZDARMA</div>
+            <h3 class="section-subtitle">Stažitelné Sekvence & Patche</h3>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z" />
+                        </svg>
+                    </div>
                     <h3>20 Free Sequences</h3>
-                    <p class="card-meta">LFO.Store, ke stažení</p>
-                    <p><strong>Obsah:</strong> 20 hotových sekvencí pro Poly D – stáhněte si a používejte!</p>
+                    <p>20 hotových sekvencí pro Poly D od LFO.Store – stáhněte si a používejte zdarma!</p>
                     <a href="https://lfo.store/shop/hardware-synths/behringer-poly-d/behringer-poly-d-20-free-sequences/"
-                        class="btn" target="_blank">Stáhnout</a>
+                        class="icon-link" target="_blank">
+                        Stáhnout
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-success" style="background-color: #c8e6c9; color: #2e7d32;">ZDARMA</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z" />
+                        </svg>
+                    </div>
                     <h3>Vega 2 - 38 Patches</h3>
-                    <p class="card-meta">YouTube, patche a sekvence</p>
-                    <p><strong>Obsah:</strong> 38 vysoce kvalitních patchů a sekvencí pro různé žánry.</p>
-                    <a href="https://www.youtube.com/watch?v=rKKzbtppcJM" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+                    <p>38 vysoce kvalitních patchů a sekvencí pro různé žánry (YouTube showcase).</p>
+                    <a href="https://www.youtube.com/watch?v=rKKzbtppcJM" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-success" style="background-color: #c8e6c9; color: #2e7d32;">ZDARMA</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z" />
+                        </svg>
+                    </div>
                     <h3>Sample Pack</h3>
-                    <p class="card-meta">Mr. Card Synths, YouTube</p>
-                    <p><strong>Obsah:</strong> Nahrané vzorky basy, pady, leady – demonstrace zvuků.</p>
-                    <a href="https://www.youtube.com/watch?v=uP3cyxpVdHo" class="btn" target="_blank">Sledovat na
-                        YouTube</a>
+                    <p>Nahrané vzorky basy, pady, leady – demonstrace zvuků od Mr. Card Synths.</p>
+                    <a href="https://www.youtube.com/watch?v=uP3cyxpVdHo" class="icon-link" target="_blank">
+                        Sledovat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-success" style="background-color: #c8e6c9; color: #2e7d32;">ZDARMA</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z" />
+                        </svg>
+                    </div>
                     <h3>Community Patches</h3>
-                    <p class="card-meta">Reddit r/synthesizers, community</p>
-                    <p><strong>Obsah:</strong> Patche a sekvence od komunity, diskuze, tipy.</p>
+                    <p>Patche a sekvence od komunity na Reddit r/synthesizers, diskuze, tipy.</p>
                     <a href="https://www.reddit.com/r/synthesizers/comments/1i8qrhx/patch_sheet_settings_for_the_behringer_poly_d/"
-                        class="btn" target="_blank">Navštívit Reddit</a>
+                        class="icon-link" target="_blank">
+                        Navštívit Reddit
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Recenze & Documentace
+            <h3 class="section-subtitle">Recenze & Documentace
             </h3>
-            <div class="card-grid">
-                <div class="card">
-                    <div class="badge badge-theory">REVIEW</div>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </div>
                     <h3>In2Guitar - Poly D Review</h3>
-                    <p class="card-meta">In2Guitar.com, detailní review</p>
-                    <p><strong>Obsah:</strong> Detailní review, poly/uni režimy, auto-damp, patch ideas.</p>
-                    <a href="https://www.in2guitar.com/polydrev.html" class="btn" target="_blank">Čtěte Review</a>
+                    <p>Detailní review, poly/uni režimy, auto-damp, patch ideas.</p>
+                    <a href="https://www.in2guitar.com/polydrev.html" class="icon-link" target="_blank">
+                        Čtěte Review
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-theory">DOKUMENTACE</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg>
+                    </div>
                     <h3>Ctrlr Panel Documentation</h3>
-                    <p class="card-meta">Sunny Synths, PDF</p>
-                    <p><strong>Obsah:</strong> MIDI control, program management, patch design.</p>
+                    <p>MIDI control, program management, patch design (PDF Documentation).</p>
                     <a href="https://www.sunnysynths.com/_files/ugd/48bb89_09eda683d71543989882b8c175ec53d1.pdf?index=true"
-                        class="btn" target="_blank">Stáhnout PDF</a>
+                        class="icon-link" target="_blank">
+                        Stáhnout PDF
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-theory">KOMUNITA</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z" />
+                        </svg>
+                    </div>
                     <h3>PresetPatch</h3>
-                    <p class="card-meta">PresetPatch.com, resources</p>
-                    <p><strong>Obsah:</strong> Volné patch sheets a resources pro Poly D.</p>
-                    <a href="https://www.presetpatch.com/synth/behringer-poly-d" class="btn" target="_blank">Navštívit
-                        Web</a>
+                    <p>Volné patch sheets a resources pro Poly D na PresetPatch.com.</p>
+                    <a href="https://www.presetpatch.com/synth/behringer-poly-d" class="icon-link" target="_blank">
+                        Navštívit Web
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
-                    <div class="badge badge-theory">KOMUNITA</div>
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
                     <h3>LoopopMusic - Review & Ideas</h3>
-                    <p class="card-meta">LoopopMusic.com, kompletní review</p>
-                    <p><strong>Obsah:</strong> Komplexní review s patch nápady a tipy.</p>
-                    <a href="https://loopopmusic.com/behringer-poly-d-review-tutorial-and-patch-ideas" class="btn"
-                        target="_blank">Čtěte Článek</a>
+                    <p>Komplexní review s patch nápady a tipy od LoopopMusic.</p>
+                    <a href="https://loopopmusic.com/behringer-poly-d-review-tutorial-and-patch-ideas" class="icon-link"
+                        target="_blank">
+                        Čtěte Článek
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-            <h3 style="color: var(--color-primary); margin-top: 2rem; margin-bottom: 1rem;">Komunita & Diskuze</h3>
-            <div class="card-grid">
-                <div class="card">
+            <h3 class="section-subtitle">Komunita & Reviews</h3>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.2.2 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                        </svg>
+                    </div>
                     <h3>Reddit r/synthesizers</h3>
-                    <p class="card-meta">Reddit.com, komunita</p>
-                    <p>Diskuze s ostatními synth nadšenci, otázky, tipy a sdílení vlastních patchů.</p>
-                    <a href="https://www.reddit.com/r/synthesizers/" class="btn" target="_blank">Navštívit Reddit</a>
+                    <p>Komunita 300k+ nadšenců, diskuze, otázky a sdílení vlastních patchů.</p>
+                    <a href="https://www.reddit.com/r/synthesizers/" class="icon-link" target="_blank">
+                        Navštívit Reddit
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
 
-                <div class="card">
+                <div class="feature col">
+                    <div class="feature-icon mb-3">
+                        <svg viewBox="0 0 16 16" fill="currentColor">
+                            <path
+                                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
                     <h3>YouTube Komunita</h3>
-                    <p class="card-meta">YouTube, kanály tvůrců</p>
                     <p>Sledujte tvůrce jako XNB, Loopopmusic, Dillio T pro nejnovější tutoriály a tips.</p>
-                    <a href="https://www.youtube.com/results?search_query=behringer+poly+d+tutorial" class="btn"
-                        target="_blank">Hledat na YouTube</a>
+                    <a href="https://www.youtube.com/results?search_query=behringer+poly+d+tutorial" class="icon-link"
+                        target="_blank">
+                        Hledat na YouTube
+                        <svg class="bi" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
